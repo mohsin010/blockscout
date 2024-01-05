@@ -11,7 +11,7 @@ port = ExplorerConfigHelper.get_port()
 
 config :block_scout_web, BlockScoutWeb.Endpoint,
   secret_key_base:
-    System.get_env("SECRET_KEY_BASE") || "RMgI4C1HSkxsEjdhtGMfwAHfyT6CKWXOgzCboJflfSm4jeAlic52io05KB6mqzc5",
+    System.get_env("SECRET_KEY_BASE") || "JlWM76nEvwmnKwim6ZLTZSizKTaFehcv5R99YZ3iz2Mw4l9eKAoUB51oFNAUKnIl",
   http: [
     port: port
   ],

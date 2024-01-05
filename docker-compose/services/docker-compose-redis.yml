@@ -4,6 +4,8 @@ services:
   redis_db:
     image: 'redis:alpine'
     container_name: redis_db
-    command: redis-server
+    command: redis-server 
     volumes:
       - ./redis-data:/data
+    ports:
+      - 6380:6379

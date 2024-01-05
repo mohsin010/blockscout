@@ -14,3 +14,4 @@ services:
       -  ../envs/common-blockscout.env
     volumes:
       - ./logs/:/app/logs/
+      - /home/muham/work/private_node/duli1/:/app/logs/

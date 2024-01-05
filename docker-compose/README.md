@@ -15,6 +15,13 @@ cd ./docker-compose
 docker-compose up --build
 ```
 
+## Build Backend for External Frontend
+Run docker-compose-external-frontend-build-backend.yml with Envs 'DOCKER_TAG' and 'FRONT_PROXY_PASS'
+
+```bash
+DOCKER_TAG=local FRONT_PROXY_PASS=http://192.168.0.180:3000  docker compose -f docker-compose-external-frontend-build-backend.yml up
+```
+change proxy while running internal frontend in proxy config to : http://192.168.0.180
 **Note**: if you don't need to make backend customizations, you can run `docker-compose up` in order to launch from pre-build backend Docker image. This will be much faster.
 
 This command uses `docker-compose.yml` by-default, which builds the backend of the explorer into the Docker image and runs 9 Docker containers:
